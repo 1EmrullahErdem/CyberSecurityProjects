@@ -52,7 +52,7 @@ def virustotal():
     file_path = str(input('please Enter The File Path: '))
     domain_CSV = pandas.read_csv((file_path))
     Urls = domain_CSV['Domain'].tolist()
-    API_key = '5d1f61f0e9b08fa236c7383186769afd9fa64bfc160c863b59297f4a7f92a518'
+    API_key = 'Your Key'
     url = 'https://www.virustotal.com/vtapi/v2/u rl/report'
 
     parameters = {'apikey': API_key, 'resource': Urls}
